@@ -7,7 +7,7 @@ Install Node.js, npm, and DHT11 driver on RPi
 
 ### Install DHT11 driver[1]
 
-'''
+```
 wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
 tar zxvf bcm2835-1.60.tar.gz
 cd bcm2835-1.60
@@ -15,7 +15,7 @@ cd bcm2835-1.60
 make
 sudo make check
 sudo make install
-'''
+```
 
 ### References
 [1] http://www.airspayce.com/mikem/bcm2835/index.html
