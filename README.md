@@ -38,5 +38,5 @@ sudo npm install --unsafe-perm -g node-red-contrib-dht-sensor
 ```
 
 ### References
-[1] http://www.airspayce.com/mikem/bcm2835/index.html
+[1] http://www.airspayce.com/mikem/bcm2835/index.html 
 [2] https://flows.nodered.org/node/node-red-contrib-dht-sensor
