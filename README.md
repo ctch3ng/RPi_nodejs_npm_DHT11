@@ -32,7 +32,11 @@ sudo make check
 sudo make install
 ```
 ### REBOOT
+```
+sudo reboot
+```
 
+### Start Node-Red
 ```
 node-red-start
 ```
