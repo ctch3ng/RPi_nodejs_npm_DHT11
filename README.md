@@ -6,7 +6,7 @@ Install Node.js, npm, and DHT11 driver on RPi
 sudo apt-get update
 sudo apt-get dist-upgrade
 ```
-### Install nodejs
+### Install nodejs [optional]
 ```
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -16,6 +16,9 @@ node -v
 ### Install npm
 ```
 sudo apt-get install npm
+sudo npm install -g npm
+sudo npm install -g npm
+sudo npm install -g npm
 ```
 
 ### Install DHT11 driver[1]
@@ -28,16 +31,12 @@ make
 sudo make check
 sudo make install
 ```
-### Install the node-dht-sensor dependency[2]
+### REBOOT
+
 ```
-sudo npm install --unsafe-perm -g node-dht-sensor
+node-red-start
 ```
-### Install node-red-contrib-dht-sensor node[2]
-```
-sudo npm install --unsafe-perm -g node-red-contrib-dht-sensor
-```
+Open a browser and visit 127.0.0.1:1880. Click the "triple bars" button on the top right corner. Select "Manage palette". Select the "Install" Tag. Use DHT as keyword, select "node-red-contrib-dht-sensor" and click the install button.
 
 ### References
 [1] http://www.airspayce.com/mikem/bcm2835/index.html 
-
-[2] https://flows.nodered.org/node/node-red-contrib-dht-sensor
